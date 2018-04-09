@@ -4,6 +4,7 @@
 |   201510414401   |    软工15-4 |    陈惠翔  | 
 ## 1.图书管理系统的用例关系图
 ### 1.1管理员用例图PlantUML源码如下：
+``` usecase
 @startuml
 Left to right direction
 :管理员:
@@ -17,11 +18,12 @@ rectangle {
 (登录)<..(找回密码):extends
 }
 @enduml
+```
 ### 1.2 阅者用例图如下：
 ![usecase](experiment2.png)
 
 ### 1.3借阅者用例图PlantUML源码如下：
-
+``` usecase
 @startuml
 Left to right direction
 
@@ -37,7 +39,7 @@ rectangle {
 (还书)<..(缴纳罚金):<extends>
 }
 @enduml
-@enduml
+```
 ### 1.4 借阅者用例图如下：
 ![usecase](experiment2.2.png)
 
