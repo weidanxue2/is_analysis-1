@@ -73,3 +73,42 @@ rectangle {
 ![usecase](test2.2.png)
 ###     3.1 “预定图书”用例
 ![usecase](test2.3.png)
+### 归还图书用例PlantUML图
+``` usecase
+@startuml
+|借阅者|
+start
+:登陆;
+if(忘记密码) then (是)
+:找回密码;
+else(否)
+endif
+:提供所还图书;
+|管理员|
+:检查图书;
+if (图书是否损坏) then (是)
+|还书者|
+:办理赔偿手续;
+|管理员|
+else(否)
+:输入图书信息;
+fork
+:验证图书信息;
+fork again
+:验证读者信息;
+end fork
+fork
+:记录还书信息;
+fork again
+:修改图书状态;
+fork again
+:修改可借数量;
+end fork
+|管理员|
+:确认图书归还完毕;
+endif
+stop
+@enduml
+```
+### 还书例图如下：
+![usecase](test2.6.png)
