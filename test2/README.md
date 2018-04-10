@@ -71,7 +71,7 @@ rectangle {
 
 ###     3.2 “还书”用例
 ![usecase](test2.2.png)
-###     3.1 “预定图书”用例
+###     3.3 “预定图书”用例
 ![usecase](test2.3.png)
 ### 归还图书用例PlantUML图
 ``` usecase
